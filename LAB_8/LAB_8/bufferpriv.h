@@ -26,6 +26,10 @@
 * +-----+ +-----+ +-----+ +-----+ +-----+
 */
 private:
+	char *array;
+	int capacity;
+	int length;
+	int cursor;
 /*
 * Type: Cell
 * ----------
