@@ -17,8 +17,13 @@ using namespace std;
 * dummy cell and set the internal pointers correctly.
 */
 EditorBuffer::EditorBuffer() {
+<<<<<<< HEAD
 	start = cursor = new Cell;
 	start->link = nullptr;
+=======
+start = cursor = new Cell;
+start->link = nullptr;
+>>>>>>> incliude problem
 }
 /*
 * Implementation notes: EditorBuffer destructor
@@ -32,12 +37,21 @@ EditorBuffer::EditorBuffer() {
 * link pointer before calling delete.
 */
 EditorBuffer::~EditorBuffer() {
+<<<<<<< HEAD
 	Cell *cp = start;
 	while (cp != nullptr) {
 		Cell *next = cp->link;
 		delete cp;
 		cp = next;
 	}
+=======
+Cell *cp = start;
+while (cp != nullptr) {
+Cell *next = cp->link;
+delete cp;
+cp = next;
+}
+>>>>>>> incliude problem
 }
 /*
 * Implementation notes: moveCursor methods

@@ -26,6 +26,7 @@
 * +-----+ +-----+ +-----+ +-----+ +-----+
 */
 private:
+<<<<<<< HEAD
 	char *array;
 	int capacity;
 	int length;
@@ -47,3 +48,22 @@ Cell *cursor; /* Pointer to cell before cursor */
 /* Make it illegal to copy editor buffers */
 EditorBuffer(const EditorBuffer & value) { }
 const EditorBuffer & operator=(const EditorBuffer & rhs) { return *this; }
+=======
+	/*
+	* Type: Cell
+	* ----------
+	* This structure type is used locally within the implementation to
+	* store each cell in the linked-list representation. Each cell
+	* contains one character and a pointer to the next cell in the chain.
+	*/
+	struct Cell {
+		char ch;
+		Cell *link;
+	};
+	/* Instance variables */
+	Cell *start; /* Pointer to the dummy cell */
+	Cell *cursor; /* Pointer to cell before cursor */
+	/* Make it illegal to copy editor buffers */
+	EditorBuffer(const EditorBuffer & value) { }
+	const EditorBuffer & operator=(const EditorBuffer & rhs) { return *this; }
+>>>>>>> incliude problem

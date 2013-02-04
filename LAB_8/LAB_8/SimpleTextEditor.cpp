@@ -41,6 +41,10 @@ void executeCommand(EditorBuffer & buffer, string line) {
 	case 'J': buffer.moveCursorToStart(); break;
 	case 'E': buffer.moveCursorToEnd(); break;
 	case 'Q': exit(0);
+<<<<<<< HEAD
 	default: cout << "Illegal command" << endl; break;
 	}
 }
+=======
+	default: cout << "Illegal command" << endl; break;
+>>>>>>> incliude problem
